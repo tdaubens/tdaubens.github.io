@@ -1,3 +1,201 @@
-p {
-  color:red;
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: black;
+    --main-color-white: #FFFFFF;
+    --main-color-grey: #EEEEEE;
+    --main-color-darkgrey: #DDDDDD;
+    --main-color-blue: #20AFF3;
+    --main-color-red: #D62943;
+    --main-color-green: #20B812;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: var(--main-color-grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.name {
+    font-size:28px;
+    font-weight:800;
+    text-decoration:none;
+    color:black;
+}
+
+.navbar a {
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+    margin-left: 35px;
+}
+
+.navbar a:hover {
+    color:var(--main-color-blue);
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background-color: var(--main-color-white);
+}
+
+.home-content {
+    background: var(--main-color-grey);
+    max-width: 800px;
+}
+
+.home-content h1 {
+        font-size: 56px;
+        font-weight:600;
+}
+
+.home-design {
+    justify-content: right;
+    width: 300px;
+    height: 200px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    left: 100px;
+}
+
+.red {
+    background-color: var(--main-color-red);
+}
+
+.green {
+    background-color: var(--main-color-green);
+}
+
+.blue {
+    background-color: var(--main-color-blue);
+}
+
+.white {
+    background-color: var(--main-color-white);
+}
+
+.grey {
+    background-color: var(--main-color-grey);
+}
+
+.darkgrey {
+    background-color: var(--main-color-darkgrey);
+}
+
+.red-text {
+    color: var(--main-color-red);
+}
+
+.green-text {
+    color: var(--main-color-green);
+}
+
+.blue-text {
+    color: var(--main-color-blue);
+}
+
+.white-text {
+    color: var(--main-color-white);
+}
+
+.grey-text {
+    color: var(--main-color-grey);
+}
+
+.darkgrey-text {
+    color: var(--main-color-darkgrey);
+}
+
+.design-box {
+    width:100px;
+    height:100px;
+}
+
+.about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background-color: var(--main-color-white);
+}
+
+.about-content {
+    background: var(--main-color-grey);
+    max-width: 600px;
+}
+
+
+
+.projects {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background-color: var(--main-color-white);
+}
+
+.projects-content {
+    background: var(--main-color-white);
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    padding: 5px;
+    border: 2px solid var(--main-color-green);
+}
+.project-bin {
+    background-color: var(--main-color-grey);
+    aspect-ratio: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-gap: 5px;
+    align-items: center;
+    padding: 5px;
+}
+
+    .project-bin:hover {
+        background-color: var(--main-color-darkgrey);
+    }
+
+.project-image {
+    width:100%;
+    height:100%;
+}
+
+.project-bin h2{
+    font-size:24px;
+    width:100%;
+    height:30px;
+}
+
+.project-bin p {
+    font-size: 18px;
+    width: 100%;
+    height: 30px;
 }
